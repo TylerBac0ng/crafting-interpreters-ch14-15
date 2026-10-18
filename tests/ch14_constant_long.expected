@@ -1,0 +1,13 @@
+constants 254 to 257:
+0508    | OP_CONSTANT       254 '254'
+0510    | OP_CONSTANT       255 '255'
+0512    | OP_CONSTANT_LONG  256 '256'
+0516    | OP_CONSTANT_LONG  257 '257'
+bytes: 988 (256 * 2 + 44 * 4 for the loads, 300 for the rest)
+sum of 0..299 (expect 44850): 44850
+
+== index 70000 ==
+0000    2 OP_CONSTANT_LONG 70000 '7.5'
+0004    | OP_RETURN
+operand bytes: 70 11 01
+result: 7.5

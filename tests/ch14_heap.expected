@@ -1,0 +1,16 @@
+empty heap:                  valid: yes used blocks: 0  free blocks: 1
+free bytes: 67108832 (heap size 67108864 minus 32 bytes of bookkeeping)
+
+after 3 allocations:         valid: yes used blocks: 3  free blocks: 1
+free middle:                 valid: yes used blocks: 2  free blocks: 2
+free first (merges):         valid: yes used blocks: 1  free blocks: 2
+free last (merges all):      valid: yes used blocks: 0  free blocks: 1
+
+grow into free neighbor: same pointer: yes, data kept: yes
+grow with used neighbor: moved: yes, data kept: yes
+shrink: same pointer: yes
+everything freed:            valid: yes used blocks: 0  free blocks: 1
+
+stress: 200000 random operations, corrupted blocks: 0, bad heap checks: 0
+after stress test:           valid: yes used blocks: 0  free blocks: 1
+free bytes back to 67108832: yes

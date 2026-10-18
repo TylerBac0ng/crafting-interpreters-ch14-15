@@ -1,0 +1,18 @@
+12 bytes stored in 5 runs:
+  offset  0 -> line 1
+  offset  3 -> line 2
+  offset  5 -> line 5
+  offset  9 -> line 3
+  offset 11 -> line 7
+getLine() matches all 12 offsets: yes
+
+10000 bytes, 100 runs, mismatches: 0
+line info before: 65536 bytes (one int per byte of capacity)
+line info now:    1024 bytes (one LineStart per run of capacity)
+
+== lines ==
+0000   10 OP_CONSTANT         0 '1'
+0002    | OP_CONSTANT         1 '2'
+0004    | OP_ADD
+0005   11 OP_NEGATE
+0006   12 OP_RETURN

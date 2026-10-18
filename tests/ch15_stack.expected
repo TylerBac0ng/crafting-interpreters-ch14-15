@@ -1,0 +1,7 @@
+capacity before: 0
+sum of 1..1000 (expect 500500): 500500
+capacity after: 1024 (grew 8, 16, ..., 1024)
+
+negate 5 three times in place (expect -5): -5
+capacity: 1024, stack empty after return: yes
+(2 - 3) + (3 / 4) (expect -0.25): -0.25
